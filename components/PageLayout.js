@@ -8,9 +8,9 @@ const PageLayout = ({ children, className }) => {
 
     return (
         <div className={theme.type}>
-            <Head>
+            {/* <Head>
                 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
-            </Head>
+            </Head> */}
             <Container>
                 <Navbar
                     theme={theme}

@@ -5,15 +5,13 @@ export default async function enablePreview(req, res) {
         return res.status(401).json({ message: 'Not Authenticated!' })
     }
 
-    const blog = await getBlogBySlug(req.query.slug);
+    const blog = await getBlogBySlug(req.query.slug, true);
 
     if (!blog) {
         return res.status(401).json({ message: 'Invalid Slug!' })
     }
 
-    res.setPreviewData({ message: "Hello World" });
+    res.setPreviewData({});
     res.writeHead(307, { Location: `/blogs/${blog.slug}` });
     res.end();
-
-    return res.status(200).json({ message: 'Works' });
 }
