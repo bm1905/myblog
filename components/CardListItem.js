@@ -1,5 +1,5 @@
 import { Card } from 'react-bootstrap';
-import Link from 'next/Link';
+import Link from 'next/link';
 
 const CardListItem = ({ title, subtitle, link, date, coverImage, author, mode = 'normal' }) => {
 
