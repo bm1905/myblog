@@ -1,5 +1,5 @@
 import { Card, Button, Badge } from 'react-bootstrap';
-import Link from 'next/Link';
+import Link from 'next/link';
 import { urlFor } from 'lib/api';
 
 const CardItem = ({ title, subtitle, date, coverImage, author, link, mode = 'normal' }) => {
