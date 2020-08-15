@@ -33,7 +33,7 @@ export default function Home({ blogs, preview }) {
         }
       />
       <hr />
-      <Row className="mb-5">
+      <Row className="mb-5 blogs-card-list">
         {pages}
       </Row>
       <div style={{ textAlign: 'center' }}>

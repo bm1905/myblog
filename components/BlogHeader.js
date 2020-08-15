@@ -1,8 +1,13 @@
 
-const BlogHeader = ({ title, subtitle, author, date, coverImage }) => {
+const BlogHeader = ({ title, subtitle, author, date, coverImage, category }) => {
     return (
         <div className="blog-detail-header">
-            <p className="lead mb-0">
+
+
+            <h1 className="font-weight-bold blog-detail-header-title mb-0">{title}</h1>
+            <span className="post-category text-white bg-secondary mb-3">{category}</span>
+            <h3 className="blog-detail-header-subtitle mb-3"><i>{subtitle}</i></h3>
+            {/* <p className="lead mb-0">
                 <img
                     src={author?.avatar}
                     className="rounded-circle mr-3"
@@ -11,16 +16,13 @@ const BlogHeader = ({ title, subtitle, author, date, coverImage }) => {
                     alt="avatar" />
                 {author?.name}
                 {', '} {date}
-            </p>
-            <h1 className="font-weight-bold blog-detail-header-title mb-0">{title}</h1>
-            <h2 className="blog-detail-header-subtitle mb-3">{subtitle}</h2>
+            </p> */}
+
             {coverImage &&
                 <img
                     className="img-fluid rounded"
                     src={coverImage} alt="" />
             }
-
-
         </div>
     )
 };

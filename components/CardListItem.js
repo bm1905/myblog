@@ -1,7 +1,7 @@
 import { Card } from 'react-bootstrap';
 import Link from 'next/link';
 
-const CardListItem = ({ title, subtitle, link, date, coverImage, author, mode = 'normal' }) => {
+const CardListItem = ({ title, subtitle, link, date, coverImage, category, author, mode = 'normal' }) => {
 
     return (
         <Card className={`fj-card fj-card-list ${mode}`}>
@@ -28,6 +28,7 @@ const CardListItem = ({ title, subtitle, link, date, coverImage, author, mode = 
                     }
 
                 </Card.Header>
+                <span className="post-category text-white bg-secondary mb-3">{category}</span>
                 <Card.Body>
                     {
                         mode === 'placeholder' ?

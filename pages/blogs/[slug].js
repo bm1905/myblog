@@ -35,9 +35,22 @@ const BlogDetail = ({ blog, preview }) => {
                         author={blog.author}
                         date={moment(blog.date).format('LL')}
                         coverImage={urlFor(blog.coverImage).height(600).url()}
+                        category={blog.category}
                     />
                     <hr />
                     {blog.content && <BlogContent content={blog.content} />}
+                    <hr />
+                    <h5>Published by:</h5>
+                    <p className="lead mb-0">
+                        <img
+                            src={blog.author?.avatar}
+                            className="rounded-circle mr-3"
+                            height="50px"
+                            width="50px"
+                            alt="avatar" />
+                        {blog.author?.name}
+                        {', '} {moment(blog.date).format('LL')}
+                    </p>
                 </Col>
             </Row>
         </PageLayout>

@@ -17,6 +17,7 @@ const BlogList = ({ blogs, filter }) => {
                         title={blog.title}
                         subtitle={blog.subtitle}
                         coverImage={blog.coverImage}
+                        category={blog.category}
                         date={moment(blog.date).format('LL')}
                         author={blog.author}
                         link={{
@@ -31,6 +32,7 @@ const BlogList = ({ blogs, filter }) => {
                         title={blog.title}
                         subtitle={blog.subtitle}
                         coverImage={blog.coverImage}
+                        category={blog.category}
                         date={moment(blog.date).format('LL')}
                         author={blog.author}
                         link={{
@@ -39,6 +41,19 @@ const BlogList = ({ blogs, filter }) => {
                         }}
                     />
                 </Col>
+            // <Col key={blog.slug} md="6" lg="4">
+            //     <CardItem
+            //         title={blog.title}
+            //         subtitle={blog.subtitle}
+            //         coverImage={blog.coverImage}
+            //         date={moment(blog.date).format('LL')}
+            //         author={blog.author}
+            //         link={{
+            //             href: 'blogs/[slug]',
+            //             as: `/blogs/${blog.slug}`
+            //         }}
+            //     />
+            // </Col>
 
         );
     })

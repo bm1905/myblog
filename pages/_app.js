@@ -13,6 +13,7 @@ config.autoAddCss = false;
 library.add(faList, faBorderAll, faSortNumericDown, faSortNumericUp, faSun, faMoon);
 
 import '@fortawesome/fontawesome-svg-core/styles.css';
+import 'font-awesome/css/font-awesome.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'highlight.js/styles/darcula.css';
 import 'react-toggle/style.css';
