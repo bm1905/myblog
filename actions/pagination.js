@@ -1,5 +1,5 @@
 import { useSWRPages } from 'swr';
-import { Row, Col } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
 import moment from 'moment';
 import { useGetBlogs } from 'actions';
 import CardListItem from 'components/CardListItem';
@@ -9,7 +9,6 @@ import CardListItemBlank from 'components/CardListItemBlank';
 
 const BlogList = ({ blogs, filter }) => {
     return blogs.map(blog => {
-        // console.log(filter.view.blog);
         return (
             filter.view.list ?
                 <Col key={`${blog.slug}-list`} md="9">
@@ -41,20 +40,6 @@ const BlogList = ({ blogs, filter }) => {
                         }}
                     />
                 </Col>
-            // <Col key={blog.slug} md="6" lg="4">
-            //     <CardItem
-            //         title={blog.title}
-            //         subtitle={blog.subtitle}
-            //         coverImage={blog.coverImage}
-            //         date={moment(blog.date).format('LL')}
-            //         author={blog.author}
-            //         link={{
-            //             href: 'blogs/[slug]',
-            //             as: `/blogs/${blog.slug}`
-            //         }}
-            //     />
-            // </Col>
-
         );
     })
 };

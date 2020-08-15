@@ -2,7 +2,6 @@ import { Container } from "react-bootstrap";
 import Head from 'next/head';
 import Navbar from './Navbar';
 import { useTheme } from 'providers/ThemeProvider';
-import AuthorIntro from "./AuthorIntro";
 import Footer from "./Footer";
 
 const PageLayout = ({ children, className }) => {
@@ -20,18 +19,12 @@ const PageLayout = ({ children, className }) => {
                         theme={theme}
                         toggleTheme={toggleTheme}
                     />
+                    <hr />
                     <div className={`page-wrapper ${className}`}>
                         {children}
                     </div>
                 </Container>
                 <Footer />
-                {/* <footer className="page-footer">
-                    <div>
-                        <a href="#">courses</a>{' | '}
-                        <a href="#">github</a>{' | '}
-                        <a href="#">facebook</a>
-                    </div>
-                </footer> */}
             </div>
             <style jsx global> {`
                 html, body {

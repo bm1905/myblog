@@ -1,27 +1,9 @@
-import { Card, Button, Badge } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import Link from 'next/link';
 import { urlFor } from 'lib/api';
 
 const CardItem = ({ title, subtitle, date, coverImage, author, category, link, mode = 'normal' }) => {
     return (
-        // <div className="entry2 {`fj-card ${mode}`}">
-        //     <a href="/"><img src={urlFor(coverImage)} alt="Image" className="img-fluid rounded cover-image" /></a>
-        //     <div className="excerpt">
-        //         <span className="post-category text-white bg-secondary mb-3">Politics</span>
-
-        //         <h2 className="title-header"><a href="single.html">{title.length > 55 ? title.substr(0, 55) + '...' : title}</a></h2>
-        //         <div className="post-meta align-items-center text-left clearfix">
-        //             <figure className="author-figure mb-0 mr-3 float-left"><img src={author?.avatar || 'https://via.placeholder.com/150'} alt="Image" className="img-fluid" /></figure>
-        //             <span className="d-inline-block mt-1">By <a>{author?.name}</a></span>
-        //             <span>&nbsp;-&nbsp; {date}</span>
-        //         </div>
-
-        //         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor laudantium sed optio, explicabo ad deleniti impedit facilis fugit recusandae! Illo, aliquid, dicta beatae quia porro id est.</p>
-        //         <p><a href="#">Read More</a></p>
-        //     </div>
-        // </div>
-
-
         <Card className={`fj-card ${mode}`}>
             <div className={`card-body-wrapper ${!coverImage ? 'no-image' : ''}`}>
                 <div className="view overlay">

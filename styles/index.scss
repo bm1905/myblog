@@ -238,7 +238,7 @@ body {
         background-color: hsl(207, 94%, 38%);
         // border-color: hsl(210, 5%, 36%);
         // box-shadow: 0 5px 0 hsl(210, 5%, 20%);
-        bottom: -45px;
+        bottom: -30px;
         position: absolute;
         right: 1.5rem;
         -webkit-transition: -webkit-transform 0.2s;
@@ -579,10 +579,15 @@ body {
 
 /* Icons color hover */
 .fa-facebook,
+.fa-globe,
 .fa-linkedin,
 .fa-instagram,
 .fa-snapchat {
     transition: color 0.2s;
+}
+
+.fa-globe:hover {
+    color: #55acee;
 }
 
 .fa-facebook:hover {
