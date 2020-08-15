@@ -11,15 +11,15 @@ const PageLayout = ({ children, className }) => {
         <div className={theme.type}>
             <Head>
                 {/* Global site tag (gtag.js) - Google Analytics */}
-                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161012603-1" />
+                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175520381-1" />
                 <script
                     dangerouslySetInnerHTML={{
                         __html: `
                             window.dataLayer = window.dataLayer || [];
-                            function gtag(){dataLayer.push(arguments)}
+                            function gtag(){dataLayer.push(arguments);}
                             gtag('js', new Date());
 
-                            gtag('config', 'UA-161012603-1');
+                            gtag('config', 'UA-175520381-1');
                         `,
                     }}
                 />
