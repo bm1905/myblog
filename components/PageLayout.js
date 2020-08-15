@@ -10,7 +10,28 @@ const PageLayout = ({ children, className }) => {
     return (
         <div className={theme.type}>
             <Head>
+                {/* Global site tag (gtag.js) - Google Analytics */}
+                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161012603-1" />
+                <script
+                    dangerouslySetInnerHTML={{
+                        __html: `
+                            window.dataLayer = window.dataLayer || [];
+                            function gtag(){dataLayer.push(arguments)}
+                            gtag('js', new Date());
+
+                            gtag('config', 'UA-161012603-1');
+                        `,
+                    }}
+                />
+
                 <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet" />
+                <meta property="og:image"
+                    content="https://portfolio-bmaharjan.s3.amazonaws.com/Blog1.PNG" />
+                <meta property="og:image:type" content="image/jpeg" />
+                <meta property="og:url" content="https://blog-bmaharjan.herokuapp.com/" />
+                <meta property="og:title" content="My Blog Website" />
+                <meta property="og:description" content="Blog website built using headless CMS Sanity and Next.js." />
+                <title>My Blogs</title>
             </Head>
             <div>
 
