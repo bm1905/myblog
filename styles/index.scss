@@ -416,7 +416,7 @@ body {
 
 .blog-detail-page {
     padding-top: 20px;
-    font-size: 19px;
+    font-size: 15px;
 
     .blog-detail-header {
         .lead {
@@ -701,4 +701,8 @@ blockquote {
     background-position: 0 0;
     background-origin: border-box;
     background-size: 2em;
+}
+
+pre {
+    font-size: 87.5%;
 }

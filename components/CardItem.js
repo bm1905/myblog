@@ -14,7 +14,7 @@ const CardItem = ({ title, subtitle, date, coverImage, author, category, link, m
                             coverImage ?
                                 <Card.Img
                                     src={urlFor(coverImage)
-                                        .height(400)
+                                        .height(800)
                                         .crop('center')
                                         .fit('clip')
                                         .url()}
