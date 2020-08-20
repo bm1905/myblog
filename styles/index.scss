@@ -47,6 +47,10 @@ body {
             // After adding a to My Blogs.
             a {
                 font-weight: 900;
+                transition: color 0.2s;
+            }
+            a:hover {
+                color: #3505c7 !important;
             }
         }
 
