@@ -26,7 +26,7 @@ const CardItem = ({ title, subtitle, date, coverImage, author, category, link, m
 
                 </div>
 
-                <span className="post-category text-white bg-secondary mb-3">{category}</span>
+                <span className="post-category text-white bg-secondary mb-3">{category?.name}</span>
 
                 <Card.Body>
                     {

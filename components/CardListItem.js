@@ -28,7 +28,7 @@ const CardListItem = ({ title, subtitle, link, date, coverImage, category, autho
                     }
 
                 </Card.Header>
-                <span className="post-category text-white bg-secondary mb-3">{category}</span>
+                <span className="post-category text-white bg-secondary mb-3">{category?.name}</span>
                 <Card.Body>
                     {
                         mode === 'placeholder' ?
