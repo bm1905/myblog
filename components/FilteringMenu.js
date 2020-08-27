@@ -1,7 +1,14 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+// import Dropdown from 'react-dropdown';
+
 const LIST_VIEW_ICONS = ['list', 'border-all'];
 const DATE_FILTERING_ICONS = ['sort-numeric-down', 'sort-numeric-up'];
+
+// const options = [
+//     'one', 'two', 'threethreethreethree'
+// ];
+// const defaultOption = options[0];
 
 const FilteringMenu = ({ onChange, filter }) => {
 
@@ -16,13 +23,18 @@ const FilteringMenu = ({ onChange, filter }) => {
                 }
             />
             <FontAwesomeIcon
-                className="clickable hoverable"
+                className="clickable hoverable mr-3"
                 size="lg"
                 icon={DATE_FILTERING_ICONS[filter.date.asc]}
                 onClick={() =>
                     onChange('date', { asc: +!filter.date.asc })
                 }
             />
+            {/* <Dropdown
+                className='myClassName'
+                controlClassName='myControlClassName'
+                options={options} value={defaultOption} placeholder="Select an option" />
+            <p>{options}</p> */}
         </div>
     )
 }

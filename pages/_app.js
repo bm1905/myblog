@@ -17,6 +17,7 @@ import 'font-awesome/css/font-awesome.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'highlight.js/styles/darcula.css';
 import 'react-toggle/style.css';
+import 'react-dropdown/style.css';
 import 'styles/index.scss';
 
 export default ({ Component, pageProps }) =>

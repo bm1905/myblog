@@ -35,7 +35,7 @@ const BlogDetail = ({ blog, preview }) => {
                         author={blog.author}
                         date={moment(blog.date).format('LL')}
                         coverImage={urlFor(blog.coverImage).height(600).url()}
-                        category={blog.category.name}
+                        category={blog.category}
                     />
                     <hr />
                     {blog.content && <BlogContent content={blog.content} />}
