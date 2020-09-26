@@ -32,7 +32,7 @@ const Footer = () => {
             <div className="copyrightSection">
                 <Col md={12} className="text-center">
                     <ul className="social-links">
-                        <li><a href='http://www.bmaharjan.com'
+                        <li><a href='https://www.bmaharjan.com'
                             target='_blank'
                             rel='noopener noreferrer'>
                             <i className="fa fa-globe"></i>
