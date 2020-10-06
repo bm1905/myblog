@@ -1,7 +1,7 @@
 import { Row, Col } from 'react-bootstrap'
 import moment from 'moment';
 import { useRouter } from 'next/router';
-import ErrorPage from 'next/error';
+import ErrorPage from '../_error.js';
 
 import PageLayout from 'components/PageLayout';
 import BlogHeader from 'components/BlogHeader';
