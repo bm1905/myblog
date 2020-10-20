@@ -22,8 +22,8 @@ const Footer = () => {
                         <Col md={4} className="block">
                             <h4 className="title">INTERESTED AREA</h4>
                             <ul className="text">
-                                <li>Ethical Hacking</li>
-                                <li>BlockChain &amp; Cryptocurrency</li>
+                                <li>Software Development</li>
+                                <li>BlockChain</li>
                             </ul>
                         </Col>
                     </div>
