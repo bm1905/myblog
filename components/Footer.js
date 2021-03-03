@@ -8,16 +8,16 @@ const Footer = () => {
                     <div className="row more-info-text">
                         <Col md={4} className="block">
                             <h4 className="title">WHAT'S HAPPENING</h4>
-                            <p className="text">I am still working on couple of side projects (for mobile application
-                            and web application) including improving the portfolio and blog website. I am also
-                            preparing for JAVA SE Certification.
+                            <p className="text">Beside my full time job at Charles Schwab, I am 
+                            still working on couple of side projects including mobile and web applications.
+                            I am also preparing for JAVA and C# certifications.
                             </p>
                         </Col>
                         <Col md={4} className="block">
                             <h4 className="title">MY INFO</h4>
                             <p className="text"><i className="fa fa-home icons"></i>Shreveport, LA</p>
                             <p className="text"><i className="fa fa-envelope icons"></i>bijay.maharjan5@gmail.com</p>
-                            <p className="text"><i className="fa fa-phone icons"></i>(870)-949-9173</p>
+                            <p className="text"><i className="fa fa-phone icons"></i>(870)-250-9220</p>
                         </Col>
                         <Col md={4} className="block">
                             <h4 className="title">INTERESTED AREA</h4>
