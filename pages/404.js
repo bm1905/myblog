@@ -19,7 +19,7 @@ export default function Custom404() {
                     <div className="headerText">
                         <p className="heading-text">Oh noo!!!</p>
                         <p className="subheading-text">404 Not Found</p>
-                        <p className="thirdheading-text">But please do not cry. What you have in your mind may exists only in another world.</p>
+                        <p className="thirdheading-text">I am not sure if this is intentional or not.</p>
                     </div>
                 </div>
             </Container>
