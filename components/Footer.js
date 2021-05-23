@@ -37,7 +37,7 @@ const Footer = () => {
                             <i className="fa fa-globe"></i>
                         </a>
                         </li>
-                        <li><a href='https://www.facebook.com/bmaharjan.chelsea'
+                        {/* <li><a href='https://www.facebook.com/bmaharjan.chelsea'
                             target='_blank'
                             rel='noopener noreferrer'>
                             <i className="fa fa-facebook"></i>
@@ -48,7 +48,7 @@ const Footer = () => {
                             rel='noopener noreferrer'>
                             <i className="fa fa-instagram"></i>
                         </a>
-                        </li>
+                        </li> */}
                         <li><a href='https://www.linkedin.com/in/bijay-maharjan-10654b92'
                             target='_blank'
                             rel='noopener noreferrer'>
