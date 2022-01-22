@@ -9,12 +9,12 @@ const Footer = () => {
                         <Col md={4} className="block">
                             <h4 className="title">WHAT'S HAPPENING</h4>
                             <p className="text">Working on couple of side projects including mobile and web applications.
-                            Also preparing for JAVA and C# certifications.
+                            Also preparing for AWS certifications.
                             </p>
                         </Col>
                         <Col md={4} className="block">
                             <h4 className="title">MY INFO</h4>
-                            <p className="text"><i className="fa fa-home icons"></i>Shreveport, LA</p>
+                            <p className="text"><i className="fa fa-home icons"></i>Texas</p>
                             <p className="text"><i className="fa fa-envelope icons"></i>bijay.maharjan5@gmail.com</p>
                             <p className="text"><i className="fa fa-phone icons"></i>(xxx)-xxx-3465</p>
                         </Col>
@@ -68,7 +68,7 @@ const Footer = () => {
                         </a>
                         </li>
                     </ul>
-                    <p>&copy; Copyright Bijay Maharjan 2020</p>
+                    <p>Bijay Maharjan 2020</p>
                 </Col>
             </div>
         </div>
