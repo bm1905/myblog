@@ -7,10 +7,10 @@
     "node": "16.16.0"
   },
   "scripts": {
-    "dev": "set NODE_OPTIONS=--openssl-legacy-provider && next dev",
-    "build": "set NODE_OPTIONS=--openssl-legacy-provider && next build",
-    "start": "set NODE_OPTIONS=--openssl-legacy-provider && next start -p $PORT",
-    "start-dev": "set NODE_OPTIONS=--openssl-legacy-provider && next start"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p $PORT",
+    "start-dev": "next start"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
