@@ -7,7 +7,7 @@ const AuthorIntro = () => {
                 <Row>
                     <Col xs={12} md={8} >
                         <h3>About</h3>
-                        <p>Some random stuffs.</p>
+                        <p>Putting some random stuffs.</p>
                     </Col>
                 </Row>
             </Container>
