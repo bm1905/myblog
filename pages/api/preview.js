@@ -2,9 +2,9 @@ import { getBlogBySlug } from 'lib/api';
 
 export default async function enablePreview(req, res) {
     if (req.query.secret !== process.env.SANITY_PREVIEW_SECRET) {
-        console.log("req.query.secret", req.query.secret);
-        console.log("process.env.SANITY_PREVIEW_SECRET", process.env.SANITY_PREVIEW_SECRET);
-        return res.status(401).json({ message: 'Not Authenticated!' })
+        const secretFromRequest = req.query.secret;
+        const secretFromEnv = process.env.SANITY_PREVIEW_SECRET;
+        return res.status(401).json({ message: `Not Authenticated! ${secretFromRequest}, ${secretFromEnv}` });        
     }
 
     if (!req.query.slug) {
